@@ -2,3 +2,17 @@ Thu, Mar 20, 2025  5:20:41 PM:
  tests:  0|5
 total_score: 0/70
 3f6cb15
+Thu, Mar 20, 2025  5:44:57 PM: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:49:32: error: invalid application of 'sizeof' to incomplete type 'List {aka struct List}'
+       L = (List*)malloc(sizeof(List));
+                                ^~~~
+exercises.c:50:7: error: implicit declaration of function 'pushfront' [-Werror=implicit-function-declaration]
+       pushfront(L,lista[k]);
+       ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+95b9cc4
