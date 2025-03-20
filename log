@@ -33,3 +33,17 @@ exercises.c:46:8: error: unused variable 'lista' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e738d89
+Thu, Mar 20, 2025  5:51:19 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:49:32: error: invalid application of 'sizeof' to incomplete type 'List {aka struct List}'
+       L = (List*)malloc(sizeof(List));
+                                ^~~~
+exercises.c:50:7: error: implicit declaration of function 'pushfront' [-Werror=implicit-function-declaration]
+       pushfront(L,&lista[k]);
+       ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0f3abba
