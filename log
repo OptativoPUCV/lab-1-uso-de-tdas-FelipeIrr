@@ -47,3 +47,17 @@ exercises.c:50:7: error: implicit declaration of function 'pushfront' [-Werror=i
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0f3abba
+Thu, Mar 20, 2025  5:53:04 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:49:32: error: invalid application of 'sizeof' to incomplete type 'List {aka struct List}'
+       L = (List*)malloc(sizeof(List));
+                                ^~~~
+exercises.c:50:7: error: implicit declaration of function 'pushfront' [-Werror=implicit-function-declaration]
+       pushfront(L,k);
+       ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b7b965c
