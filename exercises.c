@@ -46,8 +46,9 @@ List* crea_lista() {
    //int lista[10] = {1,2,3,4,5,6,7,8,9,10};
    for (int k = 1; k <= 10; k++)
    {
-      L = (List*)malloc(sizeof(List));
-      pushfront(L,k);
+      int* dato = (int*)malloc(sizeof(List));
+      *dato = k;
+      pushfront(L,dato);
    }
 
    return L;
