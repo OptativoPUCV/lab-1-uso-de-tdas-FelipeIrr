@@ -86,3 +86,14 @@ exercises.c:51:7: error: implicit declaration of function 'pushfront' [-Werror=i
 cc1.exe: all warnings being treated as errors
 Compilation failed
 b0a6ae5
+Thu, Mar 20, 2025  5:58:01 PM: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:50:7: error: implicit declaration of function 'pushfront' [-Werror=implicit-function-declaration]
+       pushfront(L,dato);
+       ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7dea7e0
