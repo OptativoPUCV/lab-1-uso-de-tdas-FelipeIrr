@@ -90,7 +90,7 @@ void eliminaElementos(List*L, int elem){
       {
          popCurrent(L);
       }
-      else dato = next;
+      else dato = next(L);
    }
 }
 

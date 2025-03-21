@@ -403,3 +403,9 @@ exercises.c:93:17: error: assignment from incompatible pointer type [-Werror=inc
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a685dd8
+Fri, Mar 21, 2025  8:11:40 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|3
+total_score: 20/70
+23ab349
