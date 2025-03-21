@@ -496,3 +496,23 @@ exercises.c:130:11: error: comparison of distinct pointer types lacks a cast [-W
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e18c7de
+Fri, Mar 21, 2025  8:57:25 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:125:23: error: passing argument 1 of 'first' from incompatible pointer type [-Werror=incompatible-pointer-types]
+    char* dato = first(cadena);
+                       ^~~~~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:10:7: note: expected 'List * {aka struct List *}' but argument is of type 'char *'
+ void* first(List *L);
+       ^~~~~
+In file included from test.c:5:0:
+exercises.c:130:12: error: comparison of distinct pointer types lacks a cast [-Werror]
+    if(&aux == cadena) return 1;
+            ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+1297025

@@ -127,7 +127,7 @@ int parentesisBalanceados(char *cadena) {
    {
       pushFront(aux,dato);
    }
-   if(aux == cadena) return 1;
+   if(&aux == cadena) return 1;
 
    return 0;
 }
