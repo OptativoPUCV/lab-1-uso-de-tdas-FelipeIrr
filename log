@@ -461,3 +461,18 @@ Fri, Mar 21, 2025  8:43:09 PM:
  tests:  4|1
 total_score: 50/70
 b0fb1ee
+Fri, Mar 21, 2025  8:56:14 PM: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:125:17: error: implicit declaration of function 'fisrt' [-Werror=implicit-function-declaration]
+    char* dato = fisrt(cadena);
+                 ^~~~~
+exercises.c:125:17: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:130:11: error: comparison of distinct pointer types lacks a cast [-Werror]
+    if(aux == cadena) return 1;
+           ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0ec10c5
