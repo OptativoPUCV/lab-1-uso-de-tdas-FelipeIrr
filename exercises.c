@@ -122,7 +122,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 
 int parentesisBalanceados(char *cadena) {
    List* aux = create_list();
-   char* dato = fisrt(cadena);
+   char* dato = first(cadena);
    while(dato != NULL)
    {
       pushFront(aux,dato);
