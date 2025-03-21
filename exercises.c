@@ -85,7 +85,6 @@ void eliminaElementos(List*L, int elem){
    int* dato = first(L);
    for (int k = 0; k <= largo;k++)
    {
-      if(dato == NULL) break;
       if(*dato == elem)
       {
          popCurrent(L);
