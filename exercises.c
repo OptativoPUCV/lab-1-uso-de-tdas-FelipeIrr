@@ -83,7 +83,7 @@ posiciona en el elemento anterior.
 void eliminaElementos(List*L, int elem){
    int largo = get_size(L);
    int* dato = first(L);
-   for (int k = 0; k < largo; k++)
+   for (int k = 0; k <= largo; k++)
    {
       if (*dato == elem)
       {
