@@ -172,3 +172,14 @@ Fri, Mar 21, 2025  7:06:22 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 19e87fa
+Fri, Mar 21, 2025  7:11:00 PM: 
+ exercises.c | 9 +--------
+ 1 file changed, 1 insertion(+), 8 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:84:9: error: unused variable 'dato' [-Werror=unused-variable]
+    int* dato = first(L);
+         ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+550b9f5
