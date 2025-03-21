@@ -265,3 +265,9 @@ Fri, Mar 21, 2025  7:40:36 PM:
  1 file changed, 4 insertions(+)
  tests:  0|0
 b422996
+Fri, Mar 21, 2025  7:42:31 PM: 
+ exercises.c | 15 +--------------
+ 1 file changed, 1 insertion(+), 14 deletions(-)
+ tests:  2|3
+total_score: 20/70
+754dce2
