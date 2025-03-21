@@ -189,3 +189,13 @@ Fri, Mar 21, 2025  7:11:15 PM:
  tests:  2|3
 total_score: 20/70
 f3b8d9f
+Fri, Mar 21, 2025  7:19:25 PM: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:87:12: error: dereferencing pointer to incomplete type 'List {aka struct List}'
+       if (L->current == elem)
+            ^~
+Compilation failed
+d6265cc

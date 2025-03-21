@@ -81,7 +81,14 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-   
+   int largo = get_size(L);
+   for (int k = 0; k < largo; k++)
+   {
+      if (L->current == elem)
+      {
+         popCurrent(L);
+      }
+   }
 
 }
 
