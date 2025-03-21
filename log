@@ -199,3 +199,14 @@ exercises.c:87:12: error: dereferencing pointer to incomplete type 'List {aka st
             ^~
 Compilation failed
 d6265cc
+Fri, Mar 21, 2025  7:22:39 PM: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:88:16: error: comparison between pointer and integer [-Werror]
+       if (dato == elem)
+                ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+44e4835
