@@ -833,3 +833,9 @@ exercises.c:129:63: error: comparison with string literal results in unspecified
 cc1.exe: all warnings being treated as errors
 Compilation failed
 442574a
+Fri, Mar 21, 2025 10:26:31 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|1
+total_score: 50/70
+7a4936a
