@@ -710,3 +710,9 @@ arraylist.h:17:6: note: expected 'List * {aka struct List *}' but argument is of
 cc1.exe: all warnings being treated as errors
 Compilation failed
 61b6de4
+Fri, Mar 21, 2025  9:22:49 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+831c125
