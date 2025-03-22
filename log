@@ -669,3 +669,28 @@ exercises.c:135:16: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e485957
+Fri, Mar 21, 2025  9:22:08 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:128:17: error: passing argument 1 of 'pushFront' from incompatible pointer type [-Werror=incompatible-pointer-types]
+       pushFront(&aux, cadena[k]);
+                 ^
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:17:6: note: expected 'List * {aka struct List *}' but argument is of type 'Stack ** {aka struct List **}'
+ void pushFront(List *L, void *dato);
+      ^~~~~~~~~
+In file included from test.c:5:0:
+exercises.c:128:23: error: passing argument 2 of 'pushFront' makes pointer from integer without a cast [-Werror=int-conversion]
+       pushFront(&aux, cadena[k]);
+                       ^~~~~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:17:6: note: expected 'void *' but argument is of type 'char'
+ void pushFront(List *L, void *dato);
+      ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+490a716
