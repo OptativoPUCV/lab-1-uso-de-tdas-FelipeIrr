@@ -608,3 +608,35 @@ exercises.c:129:8: error: dereferencing pointer to incomplete type 'Stack {aka s
         ^~~~
 Compilation failed
 1f8b60f
+Fri, Mar 21, 2025  9:21:47 PM: 
+ exercises.c | 18 ++++++++++++++++--
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:128:17: error: passing argument 1 of 'pushFront' from incompatible pointer type [-Werror=incompatible-pointer-types]
+       pushFront(&aux, cadena[k]);
+                 ^
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:17:6: note: expected 'List * {aka struct List *}' but argument is of type 'Stack ** {aka struct List **}'
+ void pushFront(List *L, void *dato);
+      ^~~~~~~~~
+In file included from test.c:5:0:
+exercises.c:128:23: error: passing argument 2 of 'pushFront' makes pointer from integer without a cast [-Werror=int-conversion]
+       pushFront(&aux, cadena[k]);
+                       ^~~~~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:17:6: note: expected 'void *' but argument is of type 'char'
+ void pushFront(List *L, void *dato);
+      ^~~~~~~~~
+In file included from test.c:5:0:
+exercises.c:135:16: error: comparison between pointer and integer [-Werror]
+       if (dato != cadena[k])return 0;
+                ^~
+exercises.c:137:18: error: comparison between pointer and integer [-Werror]
+          if(dato == cadena[k])
+                  ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fcce252
