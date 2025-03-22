@@ -134,6 +134,7 @@ int parentesisBalanceados(char *cadena) {
    for(int k = 0; cadena[k] != '\0';k++)
    {
       if (*dato != cadena[k]) return 0;
+      dato = next(aux);
    }
    
    //if (cont % 2 != 0) return 0;
