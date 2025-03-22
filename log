@@ -734,3 +734,14 @@ Fri, Mar 21, 2025  9:24:22 PM:
  tests:  5|1
 total_score: 50/70
 5f8bd00
+Fri, Mar 21, 2025  9:39:28 PM: 
+ exercises.c | 13 +++----------
+ 1 file changed, 3 insertions(+), 10 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:133:16: error: comparison between pointer and integer [-Werror]
+       if (dato != cadena[k]) return 0;
+                ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0d439ee
