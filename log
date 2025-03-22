@@ -1231,3 +1231,14 @@ exercises.c:137:28: error: initialization makes integer from pointer without a c
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0e7f10c
+Fri, Mar 21, 2025 11:51:26 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:137:28: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+             char primero = top(aux);
+                            ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+67b0296
