@@ -598,3 +598,13 @@ exercises.c:129:12: error: comparison of distinct pointer types lacks a cast [-W
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9ddb373
+Fri, Mar 21, 2025  9:13:59 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:129:8: error: dereferencing pointer to incomplete type 'Stack {aka struct List}'
+    if (*aux == cadena) return 1;
+        ^~~~
+Compilation failed
+1f8b60f
