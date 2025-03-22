@@ -929,3 +929,41 @@ exercises.c:136:4: error: suggest parentheses around assignment used as truth va
 cc1.exe: all warnings being treated as errors
 Compilation failed
 12729c6
+Fri, Mar 21, 2025 10:41:53 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:132:31: error: passing argument 1 of 'top' from incompatible pointer type [-Werror=incompatible-pointer-types]
+             if(caracter = top(&aux) == -1) return 0;
+                               ^
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:14:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'Stack ** {aka struct List **}'
+ void *top(Stack *stack) { return first(stack); }
+       ^~~
+In file included from test.c:5:0:
+exercises.c:132:37: error: comparison between pointer and integer [-Werror]
+             if(caracter = top(&aux) == -1) return 0;
+                                     ^~
+exercises.c:132:13: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+             if(caracter = top(&aux) == -1) return 0;
+             ^~
+exercises.c:136:22: error: passing argument 1 of 'top' from incompatible pointer type [-Werror=incompatible-pointer-types]
+    if(caracter = top(&aux) == -1) return 1;
+                      ^
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:14:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'Stack ** {aka struct List **}'
+ void *top(Stack *stack) { return first(stack); }
+       ^~~
+In file included from test.c:5:0:
+exercises.c:136:28: error: comparison between pointer and integer [-Werror]
+    if(caracter = top(&aux) == -1) return 1;
+                            ^~
+exercises.c:136:4: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+    if(caracter = top(&aux) == -1) return 1;
+    ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ecc82c0
