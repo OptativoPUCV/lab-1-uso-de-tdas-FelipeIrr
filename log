@@ -1031,3 +1031,35 @@ exercises.c:136:30: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2f767d8
+Fri, Mar 21, 2025 10:43:17 PM: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:131:20: error: passing argument 1 of 'top' from incompatible pointer type [-Werror=incompatible-pointer-types]
+             if(top(&aux) == -1) return 0;
+                    ^
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:14:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'Stack ** {aka struct List **}'
+ void *top(Stack *stack) { return first(stack); }
+       ^~~
+In file included from test.c:5:0:
+exercises.c:131:26: error: comparison between pointer and integer [-Werror]
+             if(top(&aux) == -1) return 0;
+                          ^~
+exercises.c:135:11: error: passing argument 1 of 'top' from incompatible pointer type [-Werror=incompatible-pointer-types]
+    if(top(&aux) == -1) return 1;
+           ^
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:14:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'Stack ** {aka struct List **}'
+ void *top(Stack *stack) { return first(stack); }
+       ^~~
+In file included from test.c:5:0:
+exercises.c:135:17: error: comparison between pointer and integer [-Werror]
+    if(top(&aux) == -1) return 1;
+                 ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+661ed6c
