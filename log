@@ -881,3 +881,17 @@ Fri, Mar 21, 2025 10:33:43 PM:
  tests:  4|1
 total_score: 50/70
 2a2c2b1
+Fri, Mar 21, 2025 10:37:20 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:131:20: error: comparison between pointer and integer [-Werror]
+             if(aux == -1) return 0;
+                    ^~
+exercises.c:135:11: error: comparison between pointer and integer [-Werror]
+    if(aux == -1) return 1;
+           ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8de192a
