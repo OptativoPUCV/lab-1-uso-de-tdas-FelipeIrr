@@ -857,3 +857,9 @@ Fri, Mar 21, 2025 10:28:35 PM:
  tests:  5|1
 total_score: 50/70
 1b80ab9
+Fri, Mar 21, 2025 10:32:29 PM: 
+ exercises.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+ tests:  4|1
+total_score: 50/70
+7d40c33
