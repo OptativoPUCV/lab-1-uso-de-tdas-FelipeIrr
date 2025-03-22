@@ -813,3 +813,23 @@ exercises.c:129:63: error: comparison with string literal results in unspecified
 cc1.exe: all warnings being treated as errors
 Compilation failed
 b3b89fb
+Fri, Mar 21, 2025 10:25:58 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:129:25: error: comparison between pointer and integer [-Werror]
+       else if(cadena[k] == ")"|| cadena[k] == "}"|| cadena[k] == "]")
+                         ^~
+exercises.c:129:25: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:129:44: error: comparison between pointer and integer [-Werror]
+       else if(cadena[k] == ")"|| cadena[k] == "}"|| cadena[k] == "]")
+                                            ^~
+exercises.c:129:44: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:129:63: error: comparison between pointer and integer [-Werror]
+       else if(cadena[k] == ")"|| cadena[k] == "}"|| cadena[k] == "]")
+                                                               ^~
+exercises.c:129:63: error: comparison with string literal results in unspecified behavior [-Werror=address]
+cc1.exe: all warnings being treated as errors
+Compilation failed
+442574a
