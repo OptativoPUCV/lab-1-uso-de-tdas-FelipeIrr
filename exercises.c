@@ -129,11 +129,11 @@ int parentesisBalanceados(char *cadena) {
          pushFront(aux, &cadena[k]);
       else if(cadena[k] == ')'|| cadena[k] == '}'|| cadena[k] == ']')
          {
-            if(caracter = top(&aux) == -1) return 0;
+            if((caracter = top(&aux)) == -1) return 0;
             else pop(aux); 
          }
       }
-   if(caracter = top(&aux) == -1) return 1;
+   if((caracter = top(&aux)) == -1) return 1;
    else return 0;
 }
 

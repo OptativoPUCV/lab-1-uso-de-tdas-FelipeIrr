@@ -967,3 +967,35 @@ exercises.c:136:4: error: suggest parentheses around assignment used as truth va
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ecc82c0
+Fri, Mar 21, 2025 10:42:08 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:132:32: error: passing argument 1 of 'top' from incompatible pointer type [-Werror=incompatible-pointer-types]
+             if((caracter = top(&aux)) == -1) return 0;
+                                ^
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:14:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'Stack ** {aka struct List **}'
+ void *top(Stack *stack) { return first(stack); }
+       ^~~
+In file included from test.c:5:0:
+exercises.c:132:26: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+             if((caracter = top(&aux)) == -1) return 0;
+                          ^
+exercises.c:136:23: error: passing argument 1 of 'top' from incompatible pointer type [-Werror=incompatible-pointer-types]
+    if((caracter = top(&aux)) == -1) return 1;
+                       ^
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:14:7: note: expected 'Stack * {aka struct List *}' but argument is of type 'Stack ** {aka struct List **}'
+ void *top(Stack *stack) { return first(stack); }
+       ^~~
+In file included from test.c:5:0:
+exercises.c:136:17: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+    if((caracter = top(&aux)) == -1) return 1;
+                 ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d75a7f3
